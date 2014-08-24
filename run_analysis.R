@@ -97,8 +97,8 @@ runAnalysis <- function() {
 
 # Write the tidy data to text file
   cat("[getdata-006.A2] Writing Tidy Dataset to File","\n")
-  write.table(tidyData,file=paste(dataDir,"tidydata.txt",sep=""))
-  
+  write.table(tidyData,file=paste(dataDir,"tidydata.txt",sep=""),row.name=FALSE)
+
 }
 
 # Running the analysis

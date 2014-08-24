@@ -1,6 +1,5 @@
 # Coursera: Data Science Specialization
-### Getting and Cleaning Data [getdata-006]
-### Course Project
+### Getting and Cleaning Data [Course Project]
 --------------------------------------------------------------------------
 ##run_analysis.R
 The R script (run_analysis.R) performs the following:
@@ -19,12 +18,12 @@ To generate tidy data, execute the "run_analysis.R" script using the source comm
 2. Cached meta data such as default directory, features & activities.
 3. Define the [run_analysis] and [getDataset] functions.
 4. Call the [run_analysis] function.
-* Calls the [getDataset] function to get 'train' dataset.
-* Calls the [getDataset] function to get 'test' dataset.
-* Merge 'train' and 'test' dataset into interim dataset.
-* Reshape interim dataset.
-* Apply mean function to each subject and activity in interim dataset.
-* Export interim dataset with tidy data to text file in repository.
+a) Calls the [getDataset] function to get 'train' dataset.
+b) Calls the [getDataset] function to get 'test' dataset.
+c) Merge 'train' and 'test' dataset into interim dataset.
+d) Reshape interim dataset.
+e) Apply mean function to each subject and activity in interim dataset.
+f) Export interim dataset with tidy data to text file in repository.
 
 ##What does Tidy Data contains?
 Upon successful execution, a text file with the tidy data will be generated into the "getdata-006\UCI HAR Dataset" repository.

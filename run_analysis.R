@@ -96,7 +96,7 @@ runAnalysis <- function() {
   tidyData <- dcast(meltData,Subject+ActivityName~variable,mean)
 
 # Write the tidy data to text file
-  cat("[getdata-006.A2] Writng Tidy Dataset to File","\n")
+  cat("[getdata-006.A2] Writing Tidy Dataset to File","\n")
   write.table(tidyData,file=paste(dataDir,"tidydata.txt",sep=""))
   
 }

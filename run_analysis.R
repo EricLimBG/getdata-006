@@ -87,15 +87,15 @@ runAnalysis <- function() {
   rowID <- c("Subject", "ActivityID", "ActivityName")
   colID <- setdiff(colnames(mergedData), rowID)
   
-# Apply mean function to dataset using dcast function
+# Reshape dataset using melt function
   cat("[getdata-006.A2] Melting Dataset","\n")
   meltData <- melt(mergedData,id=rowID,measure.vars=colID)
   
 # Apply mean function to dataset using dcast function
   cat("[getdata-006.A2] Dcasting Dataset","\n")
   tidyData <- dcast(meltData,Subject+ActivityName~variable,mean)
-  
-# Apply mean function to dataset using dcast function
+
+# Write the tidy data to text file
   cat("[getdata-006.A2] Writng Tidy Dataset to File","\n")
   write.table(tidyData,file=paste(dataDir,"tidydata.txt",sep=""))
   
